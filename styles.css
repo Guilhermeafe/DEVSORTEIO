@@ -15,15 +15,15 @@ body {
     min-height: 100vh;
 }
 
-h1{
-    color:#ffffff;
+h1 {
+    color: #ffffff;
     font-style: normal;
     font-weight: 700;
     font-size: 100px;
     line-height: 38px;
     text-align: center;
     margin-bottom: 32px;
-    
+
 }
 
 h2 {
@@ -54,22 +54,75 @@ input {
     margin-right: 62px;
 }
 
+input::placeholder{ 
+    text-align: center;
+  }
+
 button {
     background: #8B0000;
     box-shadow: 0px 18px 40px 0px #8B000059;
     border-radius: 10px;
     width: 342px;
     height: 72px;
-   color:#FFFFFF;
-   font-weight: 700;
-   font-size: 36px;
-   margin-top: 30px;
-   border: none;
-   cursor: pointer;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
 }
 
-button:hover {opacity: 0.09;}
+button:hover {
+    opacity: 0.09;
+}
 
-button:active {opacity: 0.8;}
+button:active {
+    opacity: 0.8;
+}
 
-img {width: 383px;}
+img {
+    width: 170px;
+}
+
+
+@media(max-width:775px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 470px;
+        grid-template-rows: 250px;
+    }
+
+
+    img {
+        margin-left: 195px;
+
+    }
+
+    h1 {
+        margin-left: 78px;
+        font-size: 73px;
+    }
+
+    h2 {
+        margin-left: 222px;
+    }
+
+    .inputss {
+        margin-left: 100px;
+
+    }
+
+    .input-max {
+        margin-top: 40px;
+    }
+
+    button {
+        margin-left: 100px;
+        background: purple;
+
+    }
+
+
+
+}
